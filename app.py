@@ -2,9 +2,12 @@
 from flask import Flask
 from resources.routes import initialize_routes
 from flask_restful import Api
+from flask_cors import CORS
 
 app = Flask(__name__)
 api = Api(app)
+
+CORS(app)
 
 #Test route
 @app.route('/')

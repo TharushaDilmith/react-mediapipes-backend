@@ -9,5 +9,6 @@ def initialize_routes(api):
     api.add_resource(TrainData, "/api/train-model")
     # api.add_resource(HandIdentifier, "/api/pose-identifier")
 
+
     # post api
-    api.add_resource(HandIdentifier, "/api/pose-identifier", methods=['POST'])
+    api.add_resource(HandIdentifier, "/api/", methods=['POST'])
