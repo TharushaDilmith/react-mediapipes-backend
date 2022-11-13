@@ -1,6 +1,5 @@
 #import flask module
 from flask import Flask, render_template, request, json, jsonify
-from resources.routes import initialize_routes
 from flask_restful import Api
 import pickle
 import pandas as pd
@@ -130,7 +129,6 @@ def save_csv_data():
 
     return {"message": "Success Inserted Data"}
 
-initialize_routes(api)
 
 #Main function
 if __name__ == '__main__':
